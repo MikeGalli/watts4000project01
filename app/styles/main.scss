@@ -3,7 +3,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-
+body {
+	background: url("../images/plus_ultra_timeline_v15.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -16,7 +20,15 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.text-muted {
+	background-color: rgba(154, 171, 241, 0.3);
 
+}
+
+.col-lg-6 {
+	background-color: rgba(154, 171, 241, 0.3);
+
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,

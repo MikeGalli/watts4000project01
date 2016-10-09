@@ -1,8 +1,13 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+//Override Bootstrap variables
+@import "variables";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-@import "colors";
+//Site specific styles
 @import "content_styles";
+
+@import "qwerty";
+@import "partials/animate-mixin";

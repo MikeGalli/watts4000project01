@@ -16,7 +16,7 @@ body {
   padding-bottom: 20px;
 }
 .text-muted {
-	background-color: rgba(154, 171, 241, 0.3);
+	background-color: $main-blue;
 
 }
 .lead{
@@ -58,26 +58,55 @@ body {
   margin: 30px 0;
 }
 
+
+.container .jumbotron {
+	@include border-top-radius(0px);
+	@include border-bottom-radius(50px);
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
   h1 {
-    color:green;
+		background-blend-mode:multiply;
+    color: $main-blue;
   }
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 3px solid #e5e5e5;
   .btn {
     font-size: 21px;
     padding: 14px 24px;
   }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
+@include keyframes(slide-down) {
+  0% { opacity: 1; }
+  90% { opacity: 0; }
 }
+
+.jumbotron {
+  width: 100px;
+  height: 100px;
+  background: black;
+  @include animation('slide-down 5s 3');
+}
+
+/* Supporting marketing content */
+
+.marketing {
+	margin: 40px 0;
+	p + h4 {
+		margin-top: 28px;
+	}
+	h4 a {
+		color: $brand-warning;
+		@import "shadow"(3px);
+	}
+	p {
+		color: $brand-primary;
+	}
+}
+
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

@@ -1,0 +1,13 @@
+/*
+@mixin -webkit-text-stroke-width($stroke){
+-webkit-text-stroke: $stroke black;
+}
+*/
+
+@mixin shadow($stroke){
+  text-shadow:
+   -$stroke -$stroke 0 #000,
+    $stroke -$stroke 0 #000,
+    -$stroke $stroke 0 #000,
+     $stroke $stroke 0 #000;
+   }

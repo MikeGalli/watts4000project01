@@ -7,7 +7,6 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // endbower
 
 //Site specific styles
-@import "content_styles";
-
 @import "qwerty";
 @import "partials/animate-mixin";
+@import "content_styles";

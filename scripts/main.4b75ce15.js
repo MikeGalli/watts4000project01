@@ -1,0 +1,1 @@
+"use strict";console.log("'Allo 'Allo!"),$(document).ready(function(){$(".btn.btn-lg.btn-success").click(function(){var a=$(".lead");a.animate({left:"550px"}),a.animate({left:"0px"})})});

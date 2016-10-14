@@ -6,8 +6,10 @@
 
 @mixin shadow($stroke){
   text-shadow:
-   -$stroke -$stroke 0 #000,
+
+    0 0 2*$stroke #000;
+/*   -$stroke -$stroke 0 #000,
     $stroke -$stroke 0 #000,
     -$stroke $stroke 0 #000,
-     $stroke $stroke 0 #000;
+     $stroke $stroke 0 #000;*/
    }

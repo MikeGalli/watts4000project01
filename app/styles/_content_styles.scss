@@ -99,7 +99,7 @@ body {
 	}
 	h4 a {
 		color: $brand-warning;
-		@import "shadow"(3px);
+		@include shadow(3px);
 	}
 	p {
 		color: $brand-primary;

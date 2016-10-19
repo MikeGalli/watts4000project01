@@ -44,12 +44,14 @@ module.exports = function (grunt) {
           branch: 'gh-pages'
         }
       }
-      //herokupages: {
-      //  options: {
-      //    remote: 'git.heroku.com/watts4000project01.git',
-          //branch: 'gh-pages'
-      //  }
-    //  }
+      //test: {
+        //options: {
+          //remote: 'git.heroku.com/watts4000project01.git',
+          //Email: 'mkgalligar@gmail.com',
+          //Password: 'Herokuhuuz123',
+          //branch: 'build'
+        //}
+      //}
     },
 
     // Watches files for changes and runs tasks based on the changed files
